@@ -23,6 +23,15 @@ accepts deal details and persists them into a database.
 - Gradle
 - JUnit
 
+### Installation Steps
+
+- Clone the repository:
+
+    ```sh
+    git clone https://github.com/shareefalqaderi/ClusteredDataWarehouse.git
+    cd ClusteredDataWarehouse
+    ```
+
 ### Sample Request
 
 - **POST /deal/create**
