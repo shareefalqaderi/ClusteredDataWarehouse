@@ -87,7 +87,7 @@ public class DealServiceImplTest {
 
     @Test
     void validateDealToCurrencyCode_IsRequired() {
-        deal = new Deal(1L, "JOD", "USD", "2024-06-13 08:31:00", "1000");
+        deal = new Deal(1L, "JOD", null, "2024-06-13 08:31:00", "1000");
 
         when(dealRepository.findById(deal.getId())).thenReturn(Optional.empty());
 
@@ -98,7 +98,7 @@ public class DealServiceImplTest {
 
     @Test
     void validateDealToCurrencyCode_IncorrectFormat() {
-        deal = new Deal(1L, "JOD", "USD", "2024-06-13 08:31:00", "1000");
+        deal = new Deal(1L, "JOD", "USA", "2024-06-13 08:31:00", "1000");
 
         when(dealRepository.findById(deal.getId())).thenReturn(Optional.empty());
 
